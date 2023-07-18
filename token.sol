@@ -684,17 +684,17 @@ contract GWToken is Context, IERC20, Ownable {
     string private _symbol = "GW";
     uint8 private _decimals = 18;
     
-    uint256 public _taxFee;
+    uint256 private _taxFee;
     uint256 private _previousTaxFee = _taxFee;
     
-    uint256 public _liquidityFee;
+    uint256 private _liquidityFee;
     uint256 private _previousLiquidityFee = _liquidityFee;
 
-    uint256 public _burnFee;
+    uint256 private _burnFee;
     uint256 private _previousBurnFee = _burnFee;
     address public deadAddress = 0x000000000000000000000000000000000000dEaD;
 
-    uint256 public _marketingFee;
+    uint256 private _marketingFee;
     uint256 private _previousMarketingFee = _marketingFee;
     address payable public marketingWallet = payable(0xB2f3De5195164BE7ecCE6466D24B94Ca6Ee89529);// Add marketing wallet here
 
