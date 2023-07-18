@@ -680,7 +680,7 @@ contract GWToken is Context, IERC20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "I Wil Name";
+    string private _name = "I Will Name";
     string private _symbol = "GW";
     uint8 private _decimals = 18;
     
